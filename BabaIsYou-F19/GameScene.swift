@@ -59,16 +59,83 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     
         
-        if (nodeA!.name == "player" && nodeB!.name == "flag") {
+        if (nodeA!.name == "isblock2" && nodeB!.name == "stopblock") {
                    
                    print("Player wins!")
+            
+                       self.wall1.physicsBody?.categoryBitMask = 4
+                       self.wall1.physicsBody?.collisionBitMask = 0
+                       self.wall1.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall2.physicsBody?.categoryBitMask = 4
+                       self.wall2.physicsBody?.collisionBitMask = 0
+                       self.wall2.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall3.physicsBody?.categoryBitMask = 4
+                       self.wall3.physicsBody?.collisionBitMask = 0
+                       self.wall3.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall4.physicsBody?.categoryBitMask = 4
+                       self.wall4.physicsBody?.collisionBitMask = 0
+                       self.wall4.physicsBody?.contactTestBitMask = 0
+                   }
+                   else{
+                       self.wall1.physicsBody?.categoryBitMask = 2
+                       self.wall1.physicsBody?.collisionBitMask = 4
+                       self.wall1.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall2.physicsBody?.categoryBitMask = 2
+                       self.wall2.physicsBody?.collisionBitMask = 4
+                       self.wall2.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall3.physicsBody?.categoryBitMask = 2
+                       self.wall3.physicsBody?.collisionBitMask = 4
+                       self.wall3.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall4.physicsBody?.categoryBitMask = 2
+                       self.wall4.physicsBody?.collisionBitMask = 4
+                       self.wall4.physicsBody?.contactTestBitMask = 1
+            
                    
                }
         
         
         
-        if (nodeA!.name == "player" && nodeB!.name == "winblock") {
+        if (nodeA!.name == "stopblock" && nodeB!.name == "isblock2") {
            print("Player Wins")
+            
+                       self.wall1.physicsBody?.categoryBitMask = 4
+                       self.wall1.physicsBody?.collisionBitMask = 0
+                       self.wall1.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall2.physicsBody?.categoryBitMask = 4
+                       self.wall2.physicsBody?.collisionBitMask = 0
+                       self.wall2.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall3.physicsBody?.categoryBitMask = 4
+                       self.wall3.physicsBody?.collisionBitMask = 0
+                       self.wall3.physicsBody?.contactTestBitMask = 0
+                       
+                       self.wall4.physicsBody?.categoryBitMask = 4
+                       self.wall4.physicsBody?.collisionBitMask = 0
+                       self.wall4.physicsBody?.contactTestBitMask = 0
+                   }
+                           else{
+                       self.wall1.physicsBody?.categoryBitMask = 2
+                       self.wall1.physicsBody?.collisionBitMask = 4
+                       self.wall1.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall2.physicsBody?.categoryBitMask = 2
+                       self.wall2.physicsBody?.collisionBitMask = 4
+                       self.wall2.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall3.physicsBody?.categoryBitMask = 2
+                       self.wall3.physicsBody?.collisionBitMask = 4
+                       self.wall3.physicsBody?.contactTestBitMask = 1
+                       
+                       self.wall4.physicsBody?.categoryBitMask = 2
+                       self.wall4.physicsBody?.collisionBitMask = 4
+                       self.wall4.physicsBody?.contactTestBitMask = 1
         
            }
     
