@@ -64,35 +64,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                    print("Player wins!")
                    
                }
-               if (nodeA!.name == "player" && nodeB!.name == "isblock") {
-                   print("Player collided with isblock")
-                
-                   }
+        
+        
         
         if (nodeA!.name == "player" && nodeB!.name == "winblock") {
-           print("Player collided with winblock")
+           print("Player Wins")
         
            }
-        
-        if (nodeA!.name == "player" && nodeB!.name == "wallblock") {
-           print("Player collided with wallblock")
-        
-           }
-        
-        if (nodeA!.name == "player" && nodeB!.name == "stopblock") {
-           print("Player collided with stopblock")
-        
-           }
-        
-        if (nodeA!.name == "player" && nodeB!.name == "flagblock") {
-           print("Player collided with flagblock")
-        
-           }
-        
-        if (nodeA!.name == "player" && nodeB!.name == "wall") {
-           print("Player collided with wall")
-        
-           }
+    
     }
     
     override func update(_ currentTime: TimeInterval) {
