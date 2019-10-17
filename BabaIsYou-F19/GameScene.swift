@@ -18,6 +18,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var wallblock:SKSpriteNode!
     var winblock:SKSpriteNode!
     var stopblock:SKSpriteNode!
+    var wall:SKSpriteNode!
     
     let PLAYER_SPEED:CGFloat = 20
 
